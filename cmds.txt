@@ -1,0 +1,8 @@
+# Put input file into HDFS
+hdfs dfs -put input.txt /user/hadoop/input
+
+# Run the WordCount MapReduce job
+hadoop jar WordCount.jar WordCount /user/hadoop/input /user/hadoop/output
+
+# View the output
+hdfs dfs -cat /user/hadoop/output/part-r-00000
