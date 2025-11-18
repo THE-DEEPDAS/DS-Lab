@@ -1,0 +1,42 @@
+Flajolet–Martin Demo:
+  Exact distinct count: 1000
+  Estimated distinct count: 1626.31
+  Max trailing zeroes sample (first 5 hashes): [11, 8, 11, 8, 8]
+
+Apriori and FP-Growth Demo:
+  Apriori frequent itemsets:
+    {'milk'} -> support 3
+    {'bread'} -> support 5
+    {'butter'} -> support 4
+    {'beer'} -> support 2
+    {'milk', 'bread'} -> support 3
+    {'milk', 'butter'} -> support 3
+    {'beer', 'bread'} -> support 2
+    {'bread', 'butter'} -> support 4
+    {'milk', 'bread', 'butter'} -> support 3
+  FP-Growth frequent itemsets:
+    {'beer'} -> support 2
+    {'beer', 'butter'} -> support 1
+    {'beer', 'bread', 'butter'} -> support 1
+    {'milk', 'beer'} -> support 1
+    {'milk', 'beer', 'bread'} -> support 1
+    {'milk', 'beer', 'butter'} -> support 1
+    {'milk', 'beer', 'bread', 'butter'} -> support 1
+    {'beer', 'bread'} -> support 2
+    {'milk'} -> support 3
+    {'milk', 'bread'} -> support 3
+    {'milk', 'butter'} -> support 3
+    {'milk', 'bread', 'butter'} -> support 3
+    {'butter'} -> support 4
+    {'bread', 'butter'} -> support 4
+    {'bread'} -> support 5
+
+Bloom Filter Demo:
+  apple      -> maybe
+  banana     -> maybe
+  cherry     -> maybe
+  date       -> maybe
+  elderberry -> maybe
+  fig        -> definitely not
+  grape      -> definitely not
+  Estimated false positive rate after 5 inserts: 0.000000

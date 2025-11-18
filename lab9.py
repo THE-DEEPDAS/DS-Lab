@@ -1,7 +1,4 @@
-"""Utilities for shingling, MinHash signatures, and similarity scoring of text documents."""
-
 from __future__ import annotations
-
 import re
 import random
 from itertools import combinations
